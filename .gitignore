@@ -1,0 +1,43 @@
+# ============================================================
+# .gitignore — Proyek Riset Data (Skripsi)
+# Mengacu pada Buku Ajar Metodologi Penelitian, Bab II (2.4)
+# Prinsip: data mentah abadi, data olahan dihasilkan kode,
+#          dan data besar tidak dimasukkan ke dalam Git.
+# ============================================================
+
+# --- Dataset mentah: TIDAK PERNAH diubah, cukup didokumentasikan ---
+# (sumber, tanggal unduh, dan lisensi dicatat di README.md)
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.xls
+data/raw/*.json
+data/raw/*.parquet
+data/raw/*.zip
+data/raw/*.txt
+
+# --- Data olahan: seluruhnya dihasilkan oleh kode, bukan edit manual ---
+data/processed/*
+!data/processed/.gitkeep
+
+# --- Artefak model berukuran besar ---
+model/*.pkl
+model/*.joblib
+model/*.h5
+model/*.pt
+model/*.onnx
+
+# --- Cache Python / Jupyter ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- Berkas sistem / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Lingkungan kerja (environment) ---
+.env
+.venv/
+venv/
