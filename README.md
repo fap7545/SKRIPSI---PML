@@ -1,9 +1,9 @@
-# Skripsi — Proyek Riset Data
+# Optimasi Prediksi Churn Pelanggan E-Commerce Shopee
+### dengan Algoritma Random Forest dan XGBoost
 
-Repositori ini berisi seluruh berkas penelitian skripsi berbasis data.
-Struktur folder mengikuti praktik standar sains data (Buku Ajar Metodologi
-Penelitian, Bab II) yang memisahkan data mentah, data olahan, notebook
-analisis, model, dan draf tulisan.
+Skripsi S1 Teknik Informatika — Metodologi Penelitian (24TIF505).
+Repositori ini berisi seluruh berkas penelitian: data, notebook analisis,
+model, dan draf tulisan.
 
 ## Struktur Folder
 
@@ -33,11 +33,13 @@ skripsi/
 
 ## Sumber Data
 
-> Lengkapi bagian ini untuk setiap dataset yang dipakai.
+> Data primer: export penjualan Shopee periode Agustus 2024–Agustus 2026.
+> ⚠️ Berisi PII (Nama Penerima, No. Telepon, Alamat — sudah dimasking Shopee).
+> **Jangan** commit atau publikasikan; `data/raw/` sudah dikecualikan di `.gitignore`.
 
-| Dataset | Sumber | Tanggal Unduh | Baris × Kolom | Lisensi |
-|---------|--------|---------------|---------------|---------|
-| _(contoh)_ Telco Customer Churn | Kaggle | YYYY-MM-DD | 7043 × 21 | _(isi)_ |
+| Dataset | Sumber | Periode | Volume | Status |
+|---------|--------|---------|--------|--------|
+| Gabungan_Data_Penjualan_Agustus2024_Agustus2026.xlsx | Export Shopee (data primer) | Agu 2024–Agu 2026 | 3.584 baris / 3.250 pesanan / ~2.355 pelanggan | Data primer (bukan public — perlu konfirmasi dosen) |
 
 ## Cara Menjalankan
 
