@@ -1,15 +1,16 @@
-# Optimasi Prediksi Churn Pelanggan E-Commerce Shopee
-### dengan Algoritma Random Forest dan XGBoost
+# Optimasi Clustering Segmentasi Pelanggan E-Commerce Shopee
+### dengan Algoritma K-Means dan DBSCAN
 
 Skripsi S1 Teknik Informatika — Metodologi Penelitian (24TIF505).
-Repositori ini berisi seluruh berkas penelitian: data, notebook analisis,
-model, dan draf tulisan.
+Repositori ini berisi seluruh berkas penelitian: data, literatur, notebook
+analisis, model, dan draf tulisan.
 
 ## Struktur Folder
 
 ```
 skripsi/
-├── literatur/      # PDF jurnal/prosiding, catatan tinjauan pustaka
+├── literatur/      # PDF artikel, tabel penelitian terdahulu, daftar pustaka
+│   └── pdf/        # PDF artikel yang sudah diunduh (13/15, semuanya jurnal Sinta)
 ├── data/
 │   ├── raw/        # data mentah — TIDAK PERNAH diubah
 │   └── processed/  # data hasil cleaning & transformasi (dihasilkan kode)
@@ -55,11 +56,19 @@ skripsi/
 3. Jalankan notebook dengan jalur relatif dari akar proyek, contoh:
    ```python
    import pandas as pd
-   df = pd.read_csv("data/raw/telco_churn.csv")
+   df = pd.read_excel("data/raw/Gabungan_Data_Penjualan_Agustus2024_Agustus2026.xlsx")
    ```
    ```bash
    jupyter notebook notebook/
    ```
+
+## Studi Literatur (Poin 6)
+
+- **15 artikel inti — semuanya dari jurnal Indonesia terakreditasi Sinta (Sinta 1–4).**
+- Tabel penelitian terdahulu (format Buku Ajar + analisis celah):
+  `literatur/tabel_penelitian_terdahulu.md`
+- Daftar pustaka lengkap (APA + DOI): `literatur/daftar_pustaka.md`
+- PDF artikel: `literatur/pdf/` (13 dari 15 terunduh, sisanya manual di browser).
 
 ## Kendali Versi
 
